@@ -1,7 +1,8 @@
 import React from "react";
+import { View } from "react-native";
 
 const Quote = () => {
-  return <></>;
+  return <View></View>;
 };
 
 export default Quote;

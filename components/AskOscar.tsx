@@ -1,39 +1,24 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
+import { base } from "../styles/base";
+import Input from "./Input";
+import Quote from "./Quote";
 
 const AskOscar = () => {
   return (
     <ImageBackground
-      source={require("../assets/oscar-bg.png")}
-      style={styles.bg}
+      source={require("../assets/images/oscar-bg.png")}
+      style={base.bg}
       resizeMode="cover"
     >
-      <View style={styles.container}>
-        <Text style={styles.whiteText}>Ask Oscar Wilde</Text>
-        <Text style={[styles.whiteText, styles.smaller]}>your questions</Text>
+      <View style={base.container}>
+        <Input />
+        <Quote />
         <StatusBar style="auto" />
       </View>
     </ImageBackground>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  bg: {
-    flex: 1,
-    justifyContent: "center",
-  },
-  whiteText: {
-    color: "#fff",
-  },
-  smaller: {
-    fontSize: 10,
-  },
-});
 
 export default AskOscar;
