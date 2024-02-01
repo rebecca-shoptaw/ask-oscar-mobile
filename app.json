@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "ask-oscar-mobile",
+    "name": "Ask Oscar Wilde",
     "slug": "ask-oscar-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -24,7 +22,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/strawberry-thief-icon.png"
     }
   }
 }
